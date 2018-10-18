@@ -1,0 +1,100 @@
+// COLOR VARIABLES
+$color-primary: #c69963;
+$color-primary-dark: #B28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-blue: #6f96b0;
+
+$color-grey-dark-1: #54483A;
+$color-grey-dark-2: #6D5D4B;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+// SHADOWS
+$shadow-dark: 0 .3rem 2rem rgba(0,0,0,.3);
+$shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+
+$border: 1px solid $color-primary;
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body{
+    font-family: $font-primary;
+    color: $color-grey-dark-2;
+    font-weight: 300;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+}
+
+.container{
+    width: 120rem;
+    margin: 8rem auto;
+    min-height: 125rem;
+    background-color:$color-grey-light-1;
+    box-shadow: $shadow-dark;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 120rem;
+    height: 7rem;
+    border-bottom: 1px solid $color-primary;
+}
+
+.logo{
+    height: 5rem;
+    padding-right: 2rem;
+    line-height: 7rem;
+}
+
+.content{
+    display: flex;
+}
+
+.events{
+    width: 90rem;
+    padding: 3rem;
+    min-height: 120rem;
+    background-color: #fff;
+}
+
+.loader {
+    margin: 5rem auto;
+    text-align: center; 
+}
+
+.loader svg {
+    height: 5.5rem;
+    width: 5.5rem;
+    fill: #F59A83;
+    transform-origin: 44% 50%;
+    animation: rotate 1.5s infinite linear; 
+}
+
+@keyframes rotate {
+    0% {
+      transform: rotate(0); }
+    100% {
+      transform: rotate(360deg); 
+    }
+}
